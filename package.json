@@ -1,0 +1,14 @@
+{
+  "name": "dhcp-sniff",
+  "version": "1.0.0",
+  "description": "To Sniff dhcp",
+  "main": "index.js",
+  "scripts": {
+    "start" : "node index.js"
+  },
+  "author": "Hrithik Anchaliya",
+  "license": "ISC",
+  "dependencies": {
+    "dhcp": "^0.2.19"
+  }
+}
