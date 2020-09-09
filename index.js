@@ -1,14 +1,13 @@
-var dhcp = require('dhcp');
+const dhcp = require('dhcp');
+const say = require('say');
 
-var s = dhcp.createBroadcastHandler();
+const s = dhcp.createBroadcastHandler();
 
 s.on('message', function (data) {
-
-  let value = '12'
   console.log(data);
   if (data.options[53] === dhcp.DHCPDISCOVER) {
     if (data.chaddr === '94-65-2D-04-51-7B') {
-      console.log('Welcome home!, Hrithik');
+        say.speak('Welcome home!, Hrithik');
     }
   }
 });
